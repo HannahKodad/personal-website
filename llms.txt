@@ -1,0 +1,20 @@
+---
+layout: null
+permalink: /llms.txt
+---
+# Hannah Kodad – Hemma i norr
+
+> Hannah Kodad bor i Sverige. Hon arbetar med data- och AI-arkitektur och förvaltning för små företag (Smartflow AI), ger one-to-one mentorskap i teknik och personlig utveckling, och är guide och arrangör i svensk natur tillsammans med Babička na treku. Webbplatsen är på svenska; tjeckiska och engelska kommer senare.
+
+## Sidor
+- [Start]({{ site.url }}{{ site.baseurl }}/): kort presentation och det senaste
+- [Om mig]({{ site.url }}{{ site.baseurl }}/om-mig/): bakgrund och väg
+- [Smartflow AI]({{ site.url }}{{ site.baseurl }}/smartflow-ai/): data- och AI-arkitektur för små företag, mentorskap
+- [Uppgifter]({{ site.url }}{{ site.baseurl }}/uppgifter/): uppgifter från IT-pedagogutbildningen
+- [Länkar]({{ site.url }}{{ site.baseurl }}/lankar/): webbplatser jag gillar
+- [Kontakt]({{ site.url }}{{ site.baseurl }}/kontakt/): {{ site.data.kontakt.epost }}
+
+## Kontakt
+- E-post: {{ site.data.kontakt.epost }}
+{% for l in site.data.kontakt.lankar %}- {{ l.namn }}: {{ l.url }}
+{% endfor %}

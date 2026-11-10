@@ -1,0 +1,25 @@
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1 class="varld">Hannahs värld</h1>
+      <p class="motto">Hemma i norr</p>
+      <p class="undertitel">Teknik · Natur · Skapande · Livets glädje</p>
+      <span class="linje" aria-hidden="true"></span>
+      <p class="ingress">Min värld är färgstark och livet är roligt. Jag är en modig kvinna. Jag tycker om att upptäcka nya saker och att skapa: bygga system i datorn, sy en ny klänning eller skriva ett haiku. Jag vilar och kopplar av i naturen. Jag älskar långa vandringar. Jag är mamma till tre söner och fru till Mikael.</p>
+      <ul class="knappar">
+        <li><a class="knapp hallon" href="{{ '/kontakt/' | relative_url }}">Kontakta mig</a></li>
+        <li><a class="knapp himmel" href="{{ '/om-mig/' | relative_url }}">Om mig</a></li>
+      </ul>
+    </div>
+    {% assign n = site.data.senaste %}
+    <article class="nyhetsbrev">
+      <img src="{{ n.bild | relative_url }}" alt="{{ n.bildtext }}" width="900" height="598">
+      <div class="nyhetsbrev-text">
+        <span class="etikett">{{ n.etikett }}</span>
+        <h2>{{ n.rubrik }}</h2>
+        <p class="citat">{{ n.citat }}</p>
+        <a class="knapp guld" href="{{ n.lank | relative_url }}">{{ n.knapp }}</a>
+      </div>
+    </article>
+  </div>
+</section>

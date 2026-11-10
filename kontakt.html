@@ -1,0 +1,16 @@
+---
+layout: sida
+id: kontakt
+title: Kontakt
+permalink: /kontakt/
+description: Kontakta Hannah Kodad via e-post, LinkedIn, Facebook eller Instagram.
+---
+<p class="ingress">Skriv till mig.</p>
+<ul class="knappar">
+  <li><a class="knapp hallon" href="mailto:{{ site.data.kontakt.epost }}">E-post</a></li>
+  {% assign farger = "petrol,gron,himmel" | split: "," %}
+  {% for l in site.data.kontakt.lankar %}
+  <li><a class="knapp {{ farger[forloop.index0] }}" href="{{ l.url }}" rel="me noopener">{{ l.namn }}</a></li>
+  {% endfor %}
+</ul>
+<p class="liten" style="margin-top:24px">{{ site.data.kontakt.epost }}</p>

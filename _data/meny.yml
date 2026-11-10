@@ -1,0 +1,27 @@
+# Huvudmenyn. Ordningen här är ordningen på webbplatsen.
+# "farg" = flikens färg (ram vid hover och när fliken är vald), se farger.css.
+# Ute och Skapar är dolda tills de har innehåll – lägg tillbaka raderna då.
+- namn: Start
+  url: /
+  id: start
+  farg: petrol
+- namn: Om mig
+  url: /om-mig/
+  id: om-mig
+  farg: himmel
+- namn: Uppgifter
+  url: /uppgifter/
+  id: uppgifter
+  farg: guld
+- namn: Länkar
+  url: /lankar/
+  id: lankar
+  farg: persika
+- namn: Smartflow AI
+  url: /smartflow-ai/
+  id: smartflow
+  farg: lavendel
+- namn: Kontakt
+  url: /kontakt/
+  id: kontakt
+  farg: hallon

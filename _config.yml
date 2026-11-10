@@ -1,0 +1,18 @@
+# Grundinställningar för webbplatsen
+title: Hannah Kodad
+tagline: Hemma i norr
+description: Hannahs värld – Hemma i norr. Teknik, natur, skapande och livets glädje. Data- och AI-arkitektur med Smartflow AI, guidning i svensk natur och eget skapande.
+lang: sv
+author: Hannah Kodad
+# Repot heter "personal-website": adressen blir https://hannahkodad.github.io/personal-website
+url: "https://hannahkodad.github.io"
+baseurl: "/personal-website"
+permalink: /uppgifter/:year/:month/:title/
+markdown: kramdown
+timezone: Europe/Stockholm
+exclude:
+  - README.md
+  - docs
+  # Dolda tills de har innehåll:
+  - ute.md
+  - skapar.md
